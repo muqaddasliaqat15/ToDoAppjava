@@ -1,0 +1,243 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+   
+    background-image: url('images.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;   
+ 
+}
+@media(max-width:865px){
+    body{
+   
+        background-image: url('images.jpg');
+        background-size: cover;
+        background-repeat: no-repeat; 
+        height:800px;  
+     
+    }
+    h1{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color:rgba(0,0,0,0.3);
+        color:white;
+        height:10vh;
+        font-size:2em;
+    }
+}
+@media(max-width:470px){
+    body{
+   
+        background-image: url('images.jpg');
+        background-size: cover;
+        background-repeat: no-repeat; 
+        height:800px;  
+        width:auto;
+     
+    }
+    h1{
+        display:flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        background-color:rgba(0,0,0,0.3);
+        color:white;
+        height:6vh;
+        font-size:50px !important;
+        
+    }
+    .toDoBtn{
+    height: 50px;
+    width:50px;
+    border-radius: 25px;
+    outline:none;
+    border:none;
+    background-color: green;
+    color:white;
+    margin:0.25rem;
+    cursor: pointer;
+}
+.toDoBtn2{
+    height: 50px;
+    width:50px;
+    border-radius: 25px;
+    outline:none;
+    border:none;
+    background-color: red;
+    color:white;
+    margin:0.25rem;
+    cursor: pointer;
+}
+}
+h1{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color:rgba(0,0,0,0.3);
+    color:white;
+    height:15vh;
+    font-size:5em;
+}
+h1 span{
+    display:table-cell;
+    margin:0;
+    padding:0;
+    animation: animate 2s linear infinite;
+}
+h1 span:nthchild(1){
+    animation-delay: 0s;
+}
+h1 span:nthchild(2){
+    animation-delay: 0.25s;
+}
+h1 span:nthchild(3){
+    animation-delay: 0.5s;
+}
+h1 span:nthchild(4){
+    animation-delay: 0.75s;
+}
+h1 span:nthchild(5){
+    animation-delay: 1s;
+}
+h1 span:nthchild(6){
+    animation-delay: 1.25s;
+}
+h1 span:nthchild(7){
+    animation-delay: 1.5s;
+}
+@keyframes animate
+{
+    0%,100%{
+        color:green;
+        filter:blur(2px);
+        text-shadow:0px 0px 10px forestgreen,
+                  0px 0px 20px white,
+                  0px 0px 40px  forestgreen,
+                  0px 0px 80px  forestgreen,
+                  0px 0px 120px  forestgreen,
+                  0px 0px 600px  forestgreen,
+                  0px 0px 300px  forestgreen,
+                  0px 0px 400px  black;
+    }
+    5%,95%{
+        color:white;
+        filter:blur(0px);
+        text-shadow:0px 0px 10px none,
+    }
+}
+.toDoBtn{
+    height: 50px;
+    width:50px;
+    border-radius: 25px;
+    outline:none;
+    border:none;
+    background-color: green;
+    color:white;
+    margin:0.25rem;
+    cursor: pointer;
+}
+.toDoBtn2{
+    height: 50px;
+    width:50px;
+    border-radius: 25px;
+    outline:none;
+    border:none;
+    background-color: red;
+    color:white;
+    margin:0.25rem;
+    cursor: pointer;
+}
+.toDoBtn,.toDoBtn2:hover{
+    opacity:0.7;
+    
+
+}
+.input_div #items{
+    padding:0.1rem  1rem;
+    height: 50px;
+    outline: none;
+    width: 400px;
+    background-color: none;
+   font-size: 1.1rem;
+   margin: 0.25rem;
+   border:none;
+   
+   border-radius: 25px;
+}
+.input_div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top:90px;
+}
+ .compeleted{
+    color: black;
+    background:whitesmoke;
+    text-decoration: line-through;
+	transition: all 0.75s ease;
+}
+.compeleted p{
+    text-decoration: line-through;
+}
+.red{
+    color: white;
+    background:red;
+    text-decoration: line-through;
+	transition: all 0.75s ease;
+}
+.red p{
+    text-decoration: line-through;
+}
+li {
+    margin-top:30px;
+    list-style: none;
+	padding: 10px 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-weight: 600;
+	border: 2px solid green;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background: #4EB9CD;
+    transition: all 0.75s ease;
+    
+    
+    
+}
+
+li:hover {
+	background: #76CFE0;
+}
+
+li > button {
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: green;
+    font-weight: 800;
+    display:flex;
+    justify-content:space-between;
+}
+li p {
+    width:30%;
+    display: inline-block;
+}
+
+
+.done {
+	background: #51DF70 !important;
+	color: #00891E;
+}
+
+.delete {
+	display: none;
+}
+ 

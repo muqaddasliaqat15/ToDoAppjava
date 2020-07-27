@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>
+        <span>T</span>
+        <span>o</span>
+        <span>D</span>
+        <span>o</span>
+        <span>-</span>
+        <span>A</span>
+        <span>p</span>
+        <span>p</span>
+        </h1>
+        <div class="input_div">
+    <input type="text" placeholder="What Do You Want To DO...."  id='items'>
+    <button onclick="todoItem()" class="toDoBtn"><i class="fa fa-plus"></i></button>
+    <button onclick="deleteAll()" class="toDoBtn2"><i class="fa fa-remove"></i></button>
+</div>
+    
+<div class="row">
+    <div class="container">
+             <ul class="col-md-12" id="list">
+                </ul>
+            </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
